@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+  TodoDB:
+    image: postgres:15
+    container_name: TodoDB
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=1234
+      - POSTGRES_DB=postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - Todo-Network
+  
+  todoapp-backend:
+    build: ./Backend
+    container_name: todoapp-backend
+    restart: always
+    ports:
+      - "8000:8000"
+    environment:
+      - DB_HOST=TodoDB
+      - DB_USER=postgres
+      - DB_PASS=1234
+      - DB_NAME=postgres
+    depends_on:
+      - TodoDB
+    networks:
+      - Todo-Network
+
+  todoapp-frontend:
+    build: ./Frontend
+    container_name: todoapp-frontend
+    restart: always
+    ports:
+      - "8501:8501"
+    depends_on:
+      - todoapp-backend
+    networks:
+      - Todo-Network
+
+networks:
+  Todo-Network:
+    driver: bridge
+
+volumes:
+  postgres_data:
