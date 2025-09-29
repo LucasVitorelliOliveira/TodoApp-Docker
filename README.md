@@ -1,13 +1,15 @@
-#Alunos
-***Lucas Vitorelli de Oliveira - 2211600019***
-***Mateus Henrique Silva Rizzo - 2211600214***
+# Alunos
+
+***Lucas Vitorelli de Oliveira*** - ***2211600019***
+
+***Mateus Henrique Silva Rizzo*** - ***2211600214***
 
 
 # Gerenciador de Tarefas com Docker
 
 Uma aplicação completa de gerenciamento de tarefas, com frontend interativo e backend robusto, rodando em containers Docker.
 
-## 🚀 Visão Geral da Arquitetura
+## Visão Geral da Arquitetura
 
 Esta aplicação utiliza uma arquitetura de microsserviços, com cada componente rodando em um container Docker separado. A comunicação entre os serviços é feita através de uma rede Docker interna, garantindo isolamento e escalabilidade.
 
@@ -15,7 +17,7 @@ Esta aplicação utiliza uma arquitetura de microsserviços, com cada componente
 -   **Banco de Dados:** **PostgreSQL**, um sistema de banco de dados relacional que garante a persistência das tarefas.
 -   **Frontend (Interface do Usuário):** Uma interface web interativa desenvolvida com **Streamlit** (Python). Ela se comunica com o backend para gerenciar as tarefas.
 
-## 🛠️ Tecnologias e Ferramentas
+## Tecnologias e Ferramentas
 
 | Categoria | Ferramenta/Tecnologia | Descrição |
 | :--- | :--- | :--- |
@@ -24,7 +26,7 @@ Esta aplicação utiliza uma arquitetura de microsserviços, com cada componente
 | **Banco de Dados** | **PostgreSQL** | SGBD relacional, confiável e de código aberto. |
 | **Frontend** | **Streamlit** | Biblioteca Python para criar aplicativos web de forma simples e rápida. |
 
-## 📦 Estrutura do Projeto
+## Estrutura do Projeto
 
 A aplicação é organizada em diretórios para cada serviço, com um arquivo `docker-compose.yml` na raiz para orquestração.
 
@@ -43,7 +45,7 @@ A aplicação é organizada em diretórios para cada serviço, com um arquivo `d
 └── README.md
 
 
-## ⚙️ Como Rodar a Aplicação
+## Como Rodar a Aplicação
 
 Siga estas instruções para colocar o projeto no ar em seu ambiente local.
 
