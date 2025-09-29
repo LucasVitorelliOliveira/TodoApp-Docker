@@ -1,8 +1,8 @@
 # Alunos
 
-***Lucas Vitorelli de Oliveira*** - ***2211600019***
+## ***Lucas Vitorelli de Oliveira*** - ***2211600019***
 
-***Mateus Henrique Silva Rizzo*** - ***2211600214***
+## ***Mateus Henrique Silva Rizzo*** - ***2211600214***
 
 
 # Gerenciador de Tarefas com Docker
